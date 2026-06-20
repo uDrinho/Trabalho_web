@@ -1,0 +1,203 @@
+/* ============================
+   Vitrine - Cabeçalho
+   ============================ */
+#cabecalho-vitrine {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background-color: var(--bg-secondary);
+  border-bottom: 2px solid var(--accent-color);
+}
+
+#cabecalho-vitrine h1 {
+  font-size: 1.6rem;
+}
+
+#link-admin {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: color 0.2s ease;
+}
+
+#link-admin:hover {
+  color: var(--accent-color);
+}
+
+/* ============================
+   Vitrine - Conteúdo Principal
+   ============================ */
+#conteudo-vitrine {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* ============================
+   Vitrine - Sobre / Histórico
+   ============================ */
+#sobre h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid var(--accent-color);
+  padding-left: 0.75rem;
+}
+
+#sobre-conteudo {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  background-color: var(--bg-secondary);
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+#sobre-texto {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#sobre-texto p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+#sobre-imagem img {
+  width: 100%;
+  max-width: 600px; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); 
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+#sobre-imagem img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.legenda-imagem {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+/* ============================
+   Vitrine - Grade de Produtos
+   ============================ */
+#vitrine h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid var(--accent-color);
+  padding-left: 0.75rem;
+}
+
+#grade-pocoes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+/* ============================
+   Vitrine - Cards de Poção
+   ============================ */
+.card-pocao {
+  background-color: var(--bg-secondary);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-pocao:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(156, 39, 176, 0.15);
+}
+
+.card-pocao img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-pocao-corpo {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.card-pocao-corpo h3 {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+}
+
+.card-pocao-corpo p {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  flex: 1;
+}
+
+.card-pocao-corpo .card-preco {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  margin-top: 0.25rem;
+}
+
+.btn-comprar {
+  margin: 0 1.25rem 1.25rem;
+  padding: 0.65rem;
+  background-color: var(--accent-color);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-comprar:hover {
+  background-color: var(--accent-hover);
+}
+
+/* ============================
+   Vitrine - Rodapé
+   ============================ */
+#rodape-vitrine {
+  text-align: center;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-top: 1px solid #3a3a4a;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+/* ============================
+   Responsividade
+   ============================ */
+@media (max-width: 700px) {
+  #sobre-conteudo {
+    flex-direction: column;
+  }
+
+  #sobre-imagem img {
+    width: 100%;
+    height: auto;
+  }
+}

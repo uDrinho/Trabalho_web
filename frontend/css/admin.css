@@ -1,0 +1,168 @@
+/* ============================
+   Admin - Cabeçalho
+   ============================ */
+#cabecalho-admin {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background-color: var(--bg-secondary);
+  border-bottom: 2px solid var(--accent-color);
+}
+
+#cabecalho-admin h1 {
+  font-size: 1.5rem;
+}
+
+#link-vitrine {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+#link-vitrine:hover {
+  color: var(--accent-hover);
+}
+
+/* ============================
+   Admin - Layout Principal
+   ============================ */
+#conteudo-admin {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+#conteudo-admin h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+  border-left: 4px solid var(--accent-color);
+  padding-left: 0.75rem;
+}
+
+/* ============================
+   Admin - Formulário
+   ============================ */
+#form-pocao {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background-color: var(--bg-secondary);
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+#form-pocao label {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+#form-pocao input,
+#form-pocao textarea {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  border: 1px solid #3a3a4a;
+  border-radius: 6px;
+  padding: 0.65rem 0.85rem;
+  font-family: inherit;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+#form-pocao input:focus,
+#form-pocao textarea:focus {
+  border-color: var(--accent-color);
+}
+
+#form-pocao textarea {
+  resize: vertical;
+}
+
+#btn-cadastrar {
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  background-color: var(--accent-color);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#btn-cadastrar:hover {
+  background-color: var(--accent-hover);
+}
+
+/* ============================
+   Admin - Lista de Poções
+   ============================ */
+#lista-pocoes {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.linha-pocao {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--bg-secondary);
+  padding: 0.85rem 1.25rem;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.linha-pocao:hover {
+  background-color: #333340;
+}
+
+.linha-pocao img {
+  width: 50px;
+  height: 50px;
+  border-radius: 6px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.linha-pocao .info-pocao {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.linha-pocao .nome-pocao {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.linha-pocao .preco-pocao {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.btn-remover {
+  padding: 0.5rem 1rem;
+  background-color: var(--danger-color);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  flex-shrink: 0;
+}
+
+.btn-remover:hover {
+  opacity: 0.85;
+}

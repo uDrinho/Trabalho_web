@@ -1,0 +1,32 @@
+/* ============================
+   CSS Reset
+   ============================ */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ============================
+   Variáveis de Tema (Dark Mode)
+   ============================ */
+:root {
+  --bg-primary: #1E1E24;
+  --bg-secondary: #2B2B36;
+  --text-primary: #F5F5F5;
+  --text-secondary: #B0B0B0;
+  --accent-color: #9C27B0;
+  --accent-hover: #7A1FA2;
+  --danger-color: #D32F2F;
+}
+
+/* ============================
+   Base
+   ============================ */
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
