@@ -7,8 +7,8 @@ Este projeto consiste em um Web Service (API REST) e uma interface frontend inte
 
 O projeto utiliza um padrão de repositório dividido entre cliente e servidor:
 
-\`\`\`text
-00_trabalho2_web/
+```
+Trabalho_web/
 ├── .gitignore                    # Ignora node_modules e arquivos desnecessários
 ├── README.MD                     # Documentação principal e instruções de uso
 │
@@ -39,7 +39,7 @@ O projeto utiliza um padrão de repositório dividido entre cliente e servidor:
     └── js/
         ├── admin.js              # Lógica de integração (POST/DELETE)
         └── vitrine.js            # Lógica de integração (GET)
-\`\`\`
+```
 
 ## Como Executar
 
