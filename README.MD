@@ -46,11 +46,11 @@ Trabalho_web/
 ### 1. Iniciando o Backend
 Abra uma janela do seu emulador de terminal, navegue até a pasta do backend e instale as dependências:
 
-\`\`\`bash
+```
 cd backend
 npm install
 npm start
-\`\`\`
+```
 *O servidor estará rodando na porta 3000 (ex: http://localhost:3000).* O banco de dados em memória do SQLite será inicializado automaticamente com o catálogo base de poções.
 
 ### 2. Acessando o Frontend
@@ -58,11 +58,10 @@ Como o projeto utiliza arquivos estáticos puros para o frontend, não há neces
 
 Se estiver utilizando Python, abra uma nova aba do terminal e execute:
 
-\`\`\`bash
+```
 cd frontend
 python3 -m http.server 8000
-\`\`\`
-
+```
 Agora, acesse em seu navegador:
 - **Vitrine da Loja:** `http://localhost:8000/index.html`
 - **Painel de Administração:** `http://localhost:8000/admin.html`
